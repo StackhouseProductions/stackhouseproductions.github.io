@@ -71,10 +71,23 @@
       gap: 28px;
     }
 
+    .project-link {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
     .project {
       border: 1px solid rgba(255,255,255,0.12);
       padding: 28px;
       background: linear-gradient(to bottom, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+      transition: border-color 0.2s ease, transform 0.2s ease, background 0.2s ease;
+    }
+
+    .project-link:hover .project {
+      border-color: rgba(255,255,255,0.28);
+      transform: translateY(-2px);
+      background: linear-gradient(to bottom, rgba(255,255,255,0.05), rgba(255,255,255,0.015));
     }
 
     .meta {
@@ -135,43 +148,49 @@
     </div>
 
     <div class="projects">
-      <div class="project">
-        <div class="meta">
-          <div class="title">Still</div>
-          <div class="status">Coming Soon</div>
+      <a class="project-link" href="still.html">
+        <div class="project">
+          <div class="meta">
+            <div class="title">Still</div>
+            <div class="status">Coming Soon</div>
+          </div>
+          <div class="logline-label">Logline</div>
+          <div class="description">
+            After a violent home invasion backfires, two masked intruders must work with
+            their own hostages, a pair of art students, when their sculptures come to life
+            — and start to hunt them.
+          </div>
         </div>
-        <div class="logline-label">Logline</div>
-        <div class="description">
-          After a violent home invasion backfires, two masked intruders must work with
-          their own hostages, a pair of art students, when their sculptures come to life
-          — and start to hunt them.
-        </div>
-      </div>
+      </a>
 
-      <div class="project">
-        <div class="meta">
-          <div class="title">Sorry, Friend</div>
-          <div class="status">Coming Soon</div>
+      <a class="project-link" href="sorry-friend.html">
+        <div class="project">
+          <div class="meta">
+            <div class="title">Sorry, Friend</div>
+            <div class="status">Coming Soon</div>
+          </div>
+          <div class="logline-label">Logline</div>
+          <div class="description">
+            An overworked insurance auditor thinks she’s working the night shift alone,
+            until she hears a voice coming from behind the bathroom door.
+          </div>
         </div>
-        <div class="logline-label">Logline</div>
-        <div class="description">
-          An overworked insurance auditor thinks she’s working the night shift alone,
-          until she hears a voice coming from behind the bathroom door.
-        </div>
-      </div>
+      </a>
 
-      <div class="project">
-        <div class="meta">
-          <div class="title">Nightingale</div>
-          <div class="status">In Pre-Production</div>
+      <a class="project-link" href="nightingale.html">
+        <div class="project">
+          <div class="meta">
+            <div class="title">Nightingale</div>
+            <div class="status">In Pre-Production</div>
+          </div>
+          <div class="logline-label">Logline</div>
+          <div class="description">
+            During a late night study session, two college students dismiss the echo of a
+            songbird from inside their apartment when the presence that’s been calling to
+            them bursts out of the shadows and attacks.
+          </div>
         </div>
-        <div class="logline-label">Logline</div>
-        <div class="description">
-          During a late night study session, two college students dismiss the echo of a
-          songbird from inside their apartment when the presence that’s been calling to
-          them bursts out of the shadows and attacks.
-        </div>
-      </div>
+      </a>
     </div>
   </div>
 </body>
