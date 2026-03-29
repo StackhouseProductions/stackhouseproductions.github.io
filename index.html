@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <title>Stackhouse Productions</title>
-
   <style>
     body {
       margin: 0;
@@ -13,133 +12,91 @@
     }
 
     .hero {
-      height: 100vh;
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      padding: 40px 20px;
+      box-sizing: border-box;
       text-align: center;
     }
 
     h1 {
-      font-size: 4rem;
+      font-size: clamp(3rem, 8vw, 5.5rem);
       letter-spacing: 6px;
-      margin: 0;
+      margin: 0 0 20px 0;
     }
 
     .subtitle {
-      margin-top: 15px;
-      opacity: 0.6;
-      font-size: 0.9rem;
+      max-width: 700px;
+      opacity: 0.68;
+      line-height: 1.7;
+      margin-bottom: 60px;
+      font-size: 1rem;
+    }
+
+    .nav-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      width: min(900px, 100%);
+    }
+
+    .nav-card {
+      display: flex;
+      align-items: end;
+      justify-content: start;
+      min-height: 220px;
+      padding: 24px;
+      text-decoration: none;
+      color: #fff;
+      border: 1px solid rgba(255,255,255,0.14);
+      background:
+        linear-gradient(to top, rgba(255,255,255,0.08), rgba(255,255,255,0.02));
+      transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+      box-sizing: border-box;
+    }
+
+    .nav-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(255,255,255,0.35);
+      background:
+        linear-gradient(to top, rgba(255,255,255,0.14), rgba(255,255,255,0.03));
+    }
+
+    .nav-card span {
+      font-size: 1.2rem;
       letter-spacing: 2px;
       text-transform: uppercase;
     }
 
-    section {
-      padding: 80px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    h2 {
-      font-size: 1.5rem;
-      letter-spacing: 3px;
-      margin-bottom: 30px;
-    }
-
-    p {
-      line-height: 1.7;
-      opacity: 0.82;
-    }
-
-    .project {
-      margin-bottom: 50px;
-      padding-bottom: 30px;
-      border-bottom: 1px solid rgba(255,255,255,0.12);
-    }
-
-    .project:last-child {
-      border-bottom: none;
-    }
-
-    .project-title {
-      font-size: 1.2rem;
-      letter-spacing: 2px;
-      margin-bottom: 12px;
-    }
-
-    .project-desc {
-      opacity: 0.68;
-      line-height: 1.7;
-      max-width: 760px;
-    }
-
-    .contact {
+    footer {
       text-align: center;
-      opacity: 0.6;
-      font-size: 0.9rem;
+      padding: 24px 20px 40px;
+      opacity: 0.45;
+      font-size: 0.85rem;
       letter-spacing: 1px;
     }
   </style>
 </head>
-
 <body>
-
   <div class="hero">
     <h1>STACKHOUSE PRODUCTIONS</h1>
     <div class="subtitle">
-      Original stories in development
+      Original genre storytelling currently in development.
+      Explore upcoming short films, feature projects, and contact information.
+    </div>
+
+    <div class="nav-grid">
+      <a class="nav-card" href="short-films.html"><span>Short Films</span></a>
+      <a class="nav-card" href="features.html"><span>Features</span></a>
+      <a class="nav-card" href="contact.html"><span>Contact Us</span></a>
     </div>
   </div>
 
-  <section>
-    <h2>ABOUT</h2>
-    <p>
-      Stackhouse Productions is focused on original narrative storytelling,
-      with an emphasis on tension, atmosphere, and unsettling ideas that linger.
-      The company is currently developing a slate of genre-driven projects,
-      with upcoming work centered on horror, suspense, and darkly human situations.
-    </p>
-  </section>
-
-  <section>
-    <h2>COMING SOON</h2>
-
-    <div class="project">
-      <div class="project-title">STILL</div>
-      <div class="project-desc">
-        After a violent home invasion backfires, two masked intruders are forced
-        to work alongside their own hostages—a pair of art students—when the
-        sculptures inside the house come to life and begin hunting everyone in sight.
-      </div>
-    </div>
-
-    <div class="project">
-      <div class="project-title">SORRY, FRIEND</div>
-      <div class="project-desc">
-        An overworked insurance auditor believes she is spending another long
-        night in the office alone, until a voice starts speaking to her from
-        behind the bathroom door—and refuses to let her leave.
-      </div>
-    </div>
-
-    <div class="project">
-      <div class="project-title">NIGHTINGALE</div>
-      <div class="project-desc">
-        During a late-night study session, two college students brush off the
-        sound of a songbird echoing from somewhere inside their apartment,
-        until the presence calling to them steps out of the darkness and attacks.
-      </div>
-    </div>
-
-  </section>
-
-  <section>
-    <h2>CONTACT</h2>
-    <div class="contact">
-      stackhouseproductions@gmail.com
-    </div>
-  </section>
-
+  <footer>
+    STACKHOUSE PRODUCTIONS
+  </footer>
 </body>
 </html>
