@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Stackhouse Productions</title>
   <style>
     body {
@@ -96,8 +97,8 @@
 
     .nav-card {
       display: flex;
-      align-items: end;
-      justify-content: start;
+      align-items: flex-end;
+      justify-content: flex-start;
       min-height: 220px;
       padding: 24px;
       text-decoration: none;
@@ -107,6 +108,7 @@
         linear-gradient(to top, rgba(255,255,255,0.08), rgba(255,255,255,0.02));
       transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
       box-sizing: border-box;
+      text-align: left;
     }
 
     .nav-card:hover {
@@ -116,10 +118,23 @@
         linear-gradient(to top, rgba(255,255,255,0.14), rgba(255,255,255,0.03));
     }
 
-    .nav-card span {
+    .nav-card-content {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .nav-card-title {
       font-size: 1.2rem;
       letter-spacing: 2px;
       text-transform: uppercase;
+    }
+
+    .nav-card-text {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: rgba(255,255,255,0.72);
+      max-width: 240px;
     }
 
     footer {
@@ -145,6 +160,24 @@
     .footer-links a:hover {
       opacity: 1;
     }
+
+    @media (max-width: 640px) {
+      .hero {
+        padding: 40px 16px 50px;
+      }
+
+      .about-section {
+        margin-bottom: 60px;
+      }
+
+      .nav-card {
+        min-height: 180px;
+      }
+
+      .nav-card-text {
+        max-width: none;
+      }
+    }
   </style>
 </head>
 <body>
@@ -168,9 +201,26 @@
     </div>
 
     <div class="nav-grid">
-      <a class="nav-card" href="short-films.html"><span>Short Films</span></a>
-      <a class="nav-card" href="features.html"><span>Features</span></a>
-      <a class="nav-card" href="contact.html"><span>Contact Us</span></a>
+      <a class="nav-card" href="short-films.html">
+        <div class="nav-card-content">
+          <div class="nav-card-title">Short Films</div>
+          <div class="nav-card-text">Explore current short film projects in development, pre-production, and beyond.</div>
+        </div>
+      </a>
+
+      <a class="nav-card" href="features.html">
+        <div class="nav-card-content">
+          <div class="nav-card-title">Features</div>
+          <div class="nav-card-text">Feature-length projects and long-form stories currently taking shape.</div>
+        </div>
+      </a>
+
+      <a class="nav-card" href="contact.html">
+        <div class="nav-card-content">
+          <div class="nav-card-title">Contact</div>
+          <div class="nav-card-text">Get in touch regarding collaboration, inquiries, or project-related updates.</div>
+        </div>
+      </a>
     </div>
   </div>
 
