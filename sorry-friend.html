@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sorry, Friend | Stackhouse Productions</title>
   <style>
     body {
@@ -77,7 +78,7 @@
     }
 
     .section {
-      margin-bottom: 40px;
+      margin-bottom: 50px;
     }
 
     .label {
@@ -89,7 +90,7 @@
     }
 
     .text {
-      opacity: 0.8;
+      opacity: 0.85;
       line-height: 1.8;
       max-width: 850px;
     }
@@ -102,10 +103,10 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      color: rgba(255,255,255,0.35);
-      letter-spacing: 2px;
+      color: rgba(255,255,255,0.4);
+      letter-spacing: 3px;
       text-transform: uppercase;
-      background: linear-gradient(to bottom, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+      background: linear-gradient(to bottom, rgba(255,255,255,0.04), rgba(255,255,255,0.01));
     }
 
     .details {
@@ -135,6 +136,13 @@
       opacity: 0.9;
     }
 
+    .story-credit {
+      margin-top: 18px;
+      opacity: 0.75;
+      line-height: 1.8;
+      max-width: 850px;
+    }
+
     .back-link {
       display: inline-block;
       margin-top: 20px;
@@ -145,6 +153,20 @@
 
     .back-link:hover {
       color: #fff;
+    }
+
+    @media (max-width: 640px) {
+      .page {
+        padding: 30px 16px 60px;
+      }
+
+      .brand img {
+        height: 90px;
+      }
+
+      .topbar {
+        margin-bottom: 40px;
+      }
     }
   </style>
 </head>
@@ -158,24 +180,23 @@
         <a href="index.html">Home</a>
         <a class="active" href="short-films.html">Short Films</a>
         <a href="features.html">Features</a>
-        <a href="contact.html">Contact Us</a>
+        <a href="contact.html">Contact</a>
       </div>
     </div>
 
     <h1>Sorry, Friend</h1>
-    <div class="status">Coming Soon</div>
+    <div class="status">In Development</div>
 
     <div class="section">
       <div class="label">Logline</div>
       <div class="text">
-        An overworked insurance auditor thinks she’s working the night shift alone,
-        until she hears a voice coming from behind the bathroom door.
+        An overworked insurance auditor believes she’s working the night shift alone—until a voice speaks to her from behind a locked bathroom door.
       </div>
     </div>
 
     <div class="section">
       <div class="label">Poster</div>
-      <div class="poster-placeholder">Poster Coming Soon</div>
+      <div class="poster-placeholder">Coming Soon</div>
     </div>
 
     <div class="section">
@@ -187,20 +208,30 @@
         </div>
         <div class="detail-box">
           <div class="detail-title">Genre</div>
-          <div class="detail-text">Horror</div>
+          <div class="detail-text">Psychological Horror</div>
         </div>
         <div class="detail-box">
           <div class="detail-title">Status</div>
-          <div class="detail-text">Coming Soon</div>
+          <div class="detail-text">In Development</div>
         </div>
+      </div>
+
+      <div class="story-credit">
+        Story by Trevor Stackhouse and Cole Richards
       </div>
     </div>
 
     <div class="section">
       <div class="label">About the Project</div>
       <div class="text">
-        Sorry, Friend is an upcoming short film currently in development as part of the
-        Stackhouse Productions slate.
+        Sorry, Friend is a psychological horror short centered on isolation, exhaustion, and loss of control. Set over the course of a single night shift, a routine workday begins to collapse as something unseen makes its presence unavoidable. The film explores paranoia, burnout, and what happens when reality begins to slip.
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="label">Director’s Note</div>
+      <div class="text">
+        Overworking yourself is the real killer. It doesn’t hit all at once, but it always catches up.
       </div>
     </div>
 
