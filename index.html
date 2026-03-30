@@ -28,6 +28,32 @@
       margin: 0 0 20px 0;
     }
 
+    .logo-wrap {
+      width: min(760px, 92vw);
+      margin: 0 0 28px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .logo-wrap img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
     .subtitle {
       max-width: 700px;
       opacity: 0.68;
@@ -82,7 +108,12 @@
 </head>
 <body>
   <div class="hero">
-    <h1>STACKHOUSE PRODUCTIONS</h1>
+    <h1 class="sr-only">STACKHOUSE PRODUCTIONS</h1>
+
+    <div class="logo-wrap">
+      <img src="Official Website Logo.png" alt="Stackhouse Productions logo">
+    </div>
+
     <div class="subtitle">
       Original genre storytelling currently in development.
       Explore upcoming short films, feature projects, and contact information.
