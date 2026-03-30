@@ -99,10 +99,26 @@
 
     footer {
       text-align: center;
-      padding: 24px 20px 40px;
-      opacity: 0.45;
+      padding: 40px 20px;
+      opacity: 0.6;
       font-size: 0.85rem;
       letter-spacing: 1px;
+    }
+
+    .footer-links {
+      margin-top: 10px;
+    }
+
+    .footer-links a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+      opacity: 0.6;
+      transition: opacity 0.2s ease;
+    }
+
+    .footer-links a:hover {
+      opacity: 1;
     }
   </style>
 </head>
@@ -129,7 +145,14 @@
   </div>
 
   <footer>
-    STACKHOUSE PRODUCTIONS
+    <div>© 2026 Stackhouse Productions</div>
+
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="short-films.html">Short Films</a>
+      <a href="features.html">Features</a>
+      <a href="contact.html">Contact</a>
+    </div>
   </footer>
 </body>
 </html>
